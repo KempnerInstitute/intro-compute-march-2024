@@ -29,7 +29,7 @@ The original PyTorch Docker image does not include the `wandb` library. We need 
 **Note**: This step is very time consuming. For the workshop, please use the available image that is already modified. The modified image is available in the shared scratch space. You can use this image to run the training script.
 
 ```bash
-TBD
+CONTAINER=/n/holyscratch01/kempner_dev/Shared/intro_compute_march_2024/pytorch_2.1.2-cuda12.1-cudnn8-runtime_wandb.sif
 ```
 
 The following represents the steps here for your reference. 
@@ -47,7 +47,7 @@ This will ask for your access token. You can get the access token from the singu
 - Step 4: Build the image using the following command.
 
 ```bash
-singularity build --remote pytorch_2.1.2-cuda12.1-cudnn8-runtime_wandb.sif pytorch_2.1.2-cuda12.1-cudnn8-runtime_wandb.def
+singularity build pytorch_2.1.2-cuda12.1-cudnn8-runtime_wandb.sif pytorch_2.1.2-cuda12.1-cudnn8-runtime_wandb.def
 ```
 Please note that building the image requires root access that the user may not have, that is why you need to build the image in the singularity cloud. The `pytorch_2.1.2-cuda12.1-cudnn8-runtime_wandb.sif` image is now ready for use.
 
@@ -56,7 +56,7 @@ Please note that building the image requires root access that the user may not h
 First, change directories to your lab's scratch space with `cd $SCRATCH`. Create a personal directory within this space and move into it. After that, proceed to clone the repository.
 
 ```bash
-TBD
+git clone https://github.com/KempnerInstitute/intro-compute-march-2024.git
 ```
 
 After cloning the repository, navigate to the Example_2 directory.

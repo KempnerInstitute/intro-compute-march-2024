@@ -17,9 +17,8 @@ MODEL="resnet50"
 BATCH_SIZE=64
 
 
-DATADIR=             # <---- Add path to data directory
-CONTAINER_PATH=      # <---- Add path to container
-
+DATADIR=/n/holyscratch01/kempner_dev/Shared/intro_compute_march_2024/imagenet_winter21_subset           
+CONTAINER_PATH=CONTAINER=/n/holyscratch01/kempner_dev/Shared/intro_compute_march_2024/pytorch_2.1.2-cuda12.1-cudnn8-runtime-lightning.sif
 
 time srun singularity exec 
      --bind $DATADIR \ 

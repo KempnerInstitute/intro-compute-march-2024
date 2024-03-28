@@ -32,7 +32,7 @@ The original PyTorch Docker image does not include the `wandb` library. We need 
 **Note**: This step is very time consuming. For the workshop, please use the available image that is already modified. The modified image is available in the shared scratch space. You can use this image to run the training script.
 
 ```bash
-TBD
+CONTAINER=/n/holyscratch01/kempner_dev/Shared/intro_compute_march_2024/pytorch_2.1.2-cuda12.1-cudnn8-runtime_wandb.sif
 ```
 
 4. **Repository Cloning**: Copy the repository into the scratch space.
@@ -40,7 +40,7 @@ TBD
 First, change directories to your lab's scratch space with `cd $SCRATCH`. Create a personal directory within this space and move into it. After that, proceed to clone the repository.
 
 ```bash
-TBD
+git clone https://github.com/KempnerInstitute/intro-compute-march-2024.git
 ```
 
 After cloning the repository, navigate to the Example_4 directory.

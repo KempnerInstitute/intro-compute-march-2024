@@ -23,7 +23,7 @@ ssh <username>@login.rc.fas.harvard.edu
     - **Option 2**: Use the image from the shared scratch space.
 
     ```bash
-    TBD
+    CONTAINER=/n/holyscratch01/kempner_dev/Shared/intro_compute_march_2024/pytorch_2.1.2-cuda12.1-cudnn8-runtime.sif
     ```
 Should you choose Option 1, it's necessary to allocate a compute node due to the potential time required to download the image; performing this operation on the login node is generally not advisable. A GPU node is not required for this task—any readily available, basic partition should suffice. On the other hand, Option 2 is quicker and provides access to the same image without the wait.
 
@@ -32,7 +32,7 @@ Should you choose Option 1, it's necessary to allocate a compute node due to the
 First, change directories to your lab's scratch space with `cd $SCRATCH`. Create a personal directory within this space and move into it. After that, proceed to clone the repository.
 
 ```bash
-TBD
+git clone https://github.com/KempnerInstitute/intro-compute-march-2024.git
 ```
 After cloning the repository, navigate to the Example_1 directory.
 
