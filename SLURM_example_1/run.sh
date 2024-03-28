@@ -20,9 +20,4 @@ MEM_M_FREQ=400
 
 module load python/3.10.13-fasrc01
 
-python  cpu_mem_occupy.py   \
-  --duration $DURATION      \
-  --cpu_m_size $CPU_M_SIZE  \ 
-  --cpu_m_freq $CPU_M_FREQ  \ 
-  --mem_m_size $MEM_M_SIZE  \
-  --mem_m_freq $MEM_M_FREQ 
+python  cpu_mem_occupy.py  --duration $DURATION --cpu_m_size $CPU_M_SIZE  --cpu_m_freq $CPU_M_FREQ  --mem_m_size $MEM_M_SIZE  --mem_m_freq $MEM_M_FREQ 
