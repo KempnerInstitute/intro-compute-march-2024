@@ -18,20 +18,20 @@ The supplementary material contains files for each run scenario. Below is a list
 - **GPU Example 1**:
     - Model: ResNet-18
     - Dataset: CIFAR-10
-    - Resources: 1 GPU (TBD: Put type)
+    - Resources: 1 GPU (A100)
     - Job submission: Interactive 
 
 - **GPU Example 2**:
     - Model: ResNet-18
     - Dataset: CIFAR-10
-    - Resources: 1 GPU (TBD: Put type)
+    - Resources: 1 GPU (A100)
     - Job submission: Batch
     - Integration: Weights & Biases (wandb.ai)
 
 - **GPU Example 3**:
     - Model: ResNet-18
     - Dataset: CIFAR-10
-    - Resources: 1 GPU (TBD: Put type)
+    - Resources: 1 GPU (A100)
     - Job submission: Batch
     - Integration: Weights & Biases (wandb.ai)
     - Job Arrays
@@ -39,7 +39,13 @@ The supplementary material contains files for each run scenario. Below is a list
 - **GPU Example 4**:
     - Model: ResNet-50
     - Dataset: CIFAR-10
-    - Resources: 2, 4 GPUs (TBD: Put type)
+    - Resources: 2, 4 GPUs (A100)
     - Job submission: Batch
     - Integration: Weights & Biases (wandb.ai)
+
+- **GPU Example 5**:
+    - Model: ResNet-50
+    - Dataset: Subset of imagenet
+    - Resources: 4 GPUs, 8 GPUs (two node) (A100)
+    - Job submission: Batch
 
