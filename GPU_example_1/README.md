@@ -47,7 +47,7 @@ This command will allocate a single GPU node with 16 CPUs, 250GB of memory, and 
 5. **Running the Training Task**: Execute the training script.
 
 ```bash
-singularity exec --nv pytorch_2.1.2-cuda12.1-cudnn8-runtime.sif python train_cifer10_resnet.py --batch_size 128 --epoch 50 --lr 0.01 --model resnet18
+singularity exec --nv $CONTAINER python train_cifer10_resnet.py --batch_size 128 --epoch 50 --lr 0.01 --model resnet18
 ```
 
 This command will run the training script with the specified parameters. The `--nv` flag is necessary to enable GPU support within the Singularity container. The `--batch_size`, `--epoch`, `--lr`, and `--model` flags are used to set the batch size, number of epochs, learning rate, and model type, respectively.
