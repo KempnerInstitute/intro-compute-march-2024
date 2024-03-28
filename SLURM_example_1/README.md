@@ -71,7 +71,17 @@ seff <job_id>
 ```
 This will provide you with the CPU and Memory efficiency of the job. Try different values and see if you can run the job out of memory or CPU.
 
-8. **Cancel the job**:
+8. **Look at your old jobs**:
+
+You can also check how efficient your previous jobs. See the last 10 days jobs:
+
+```bash
+sacct -S 2024-03-18 -u <username>
+```
+
+Pick a job id and check the efficiency of the job using the `seff` command.
+
+9. **Cancel the job**:
 
 Resubmit the job and try to cancel the job using the following commands.
 
@@ -92,7 +102,7 @@ Resubmit the job and try to cancel the job using the following commands.
     ```
 
 
-9. **Hold and Release the job**:
+10. **Hold and Release the job**:
 
 If you have submitted the job and want to hold it for some reason (e.g., you releazied that there is a problem in the input data), you can put the job on hold. This will prevent the job from running until you release it and will increase the priority of the job.
 
@@ -105,7 +115,7 @@ After fixing the issue, you can release the job using the following command:
 scontrol release <job_id>
 ```
 
-10. **Fairshare Accounts**:
+11. **Fairshare Accounts**:
 
 You can check the fairshare accounts using the following command:
 
@@ -142,7 +152,7 @@ scalc
 Choose, option 3, and provide the requested information.
 
 
-11. **Report the Usage**:
+12. **Report the Usage**:
 
 `sreport` is a powerful command to provide a summary of different aspects of the cluster usage. See, from your group, who used the cluster the most in the last 7 days
 
