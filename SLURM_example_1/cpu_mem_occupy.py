@@ -32,6 +32,8 @@ def parse_args() -> argparse.Namespace:
 
 def occupy_resources(duration, cpu_m_size, cpu_m_freq, mem_m_size, mem_m_freq):
 
+    print('Running occupy resources')
+    
     # Duration in seconds
     end_time = time.time() + duration
 
