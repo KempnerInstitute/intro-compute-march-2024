@@ -5,9 +5,12 @@ Please see the [Workshop Page](TBD) for more information.
 The supplementary material contains files for each run scenario. Below is a list of the folders along with a brief description of their purposes. In all models, we modified the first and the last layers of the ResNet-18 model to fit the CIFAR-10 dataset.
 
 
-# SLURM Examples
+## SLURM Examples
 
-- 
+- **SLURM Example 1**:
+    - Usefule SLURM commands
+    - Test Only Jobs
+    - Estimating job efficiency (CPU and Memory)
 
 
 ## GPU Examples
